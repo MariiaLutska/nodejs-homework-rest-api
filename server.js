@@ -2,8 +2,7 @@ const app = require('./app');
 
 const mongoose = require('mongoose');
 
-const HOST_DB =
-  'mongodb+srv://admin:7QMXXMSLUtCLflMX@cluster0.80vropm.mongodb.net/db-contacts';
+const { HOST_DB } = process.env;
 
 async function main() {
   try {
